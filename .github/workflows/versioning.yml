@@ -25,9 +25,9 @@ jobs:
 
       - name: Execute Semantic Versioning
         env:
-          GITHUB_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git remote set-url origin https://${{ secrets.NPM_TOKEN }}@github.com/lughino/squash-merge.git
+          git remote set-url origin https://${{ secrets.GITHUB_TOKEN }}@github.com/lughino/squash-merge.git
           git config user.email squash-merge-bot@gmail.com
           git config user.name squash-merge-bot
           yarn lerna version --yes
