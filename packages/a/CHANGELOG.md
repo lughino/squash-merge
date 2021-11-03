@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/lughino/squash-merge/compare/a@1.4.0...a@1.5.0) (2021-11-03)
+
+
+### Features
+
+* **a:** update a log merge 3 ([17c710f](https://github.com/lughino/squash-merge/commit/17c710fe905d897ee30396f921c00deb374cb8e3))
+
+
+
+
+
 # [1.4.0](https://github.com/lughino/squash-merge/compare/a@1.3.0...a@1.4.0) (2021-11-03)
 
 

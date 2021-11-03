@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/lughino/squash-merge/compare/b@1.3.1...b@2.0.0) (2021-11-03)
+
+
+### Features
+
+* **b:** update b log merge 3 ([fcc9146](https://github.com/lughino/squash-merge/commit/fcc9146017a017fddfda1ab27b57aca07700f86a))
+
+
+### BREAKING CHANGES
+
+* **b:** test breaking change second package in merge
+
+
+
+
+
 ## [1.3.1](https://github.com/lughino/squash-merge/compare/b@1.3.0...b@1.3.1) (2021-11-03)
 
 **Note:** Version bump only for package b
