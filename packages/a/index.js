@@ -1,1 +1,1 @@
-console.log('packages/a/index.js updated with merge');
+console.log('packages/a/index.js updated with merge 3');
