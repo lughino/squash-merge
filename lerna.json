@@ -1,0 +1,34 @@
+{
+  "version": "independent",
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "packages": ["packages/*"],
+  "command": {
+    "version": {
+      "message": "chore(release): publish %s [ci skip]",
+      "conventionalCommits": true,
+      "commitHooks": false,
+      "push": false,
+      "ignoreChanges": [
+        "**/__resources__/**",
+        "**/__mocks__/**",
+        "**/*.story.js",
+        "**/*.spec.js",
+        "**/*.md"
+      ]
+    },
+    "publish": {
+      "message": "chore(release): publish %s [ci skip]",
+      "createRelease": "github",
+      "yes": true,
+      "skipNpm": true,
+      "ignoreChanges": [
+        "**/__resources__/**",
+        "**/__mocks__/**",
+        "**/*.story.js",
+        "**/*.spec.js",
+        "**/*.md"
+      ]
+    }
+  }
+}

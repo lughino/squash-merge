@@ -1,0 +1,34 @@
+name: Semantic Versioning
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  semver:
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, 'chore(release): publish')"
+    strategy:
+      matrix:
+        node: ['12']
+    name: Git tag and Changelogs generation
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Installing Dependencies
+        run: yarn install --frozen-lockfile --silent --prefer-offline
+
+      - name: Execute Semantic Versioning
+        env:
+          GITHUB_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          git remote set-url origin https://${{ secrets.NPM_TOKEN }}@github.com/lughino/squash-merge.git
+          git config user.email squash-merge-bot@gmail.com
+          git config user.name squash-merge-bot
+          yarn lerna version --yes
+          git push origin develop && git push --tags
