@@ -1,1 +1,1 @@
-console.log('packages/b/index.js updated2');
+console.log('packages/b/index.js updated3');
