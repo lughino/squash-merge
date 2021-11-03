@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/lughino/squash-merge/compare/b@1.2.0...b@1.3.0) (2021-11-03)
+
+
+### Features
+
+* can pick up BR? ([#5](https://github.com/lughino/squash-merge/issues/5)) ([14b80de](https://github.com/lughino/squash-merge/commit/14b80defcc96dd2f0057bcb83f715dff10118b80))
+
+
+
+
+
 # [1.2.0](https://github.com/lughino/squash-merge/compare/b@1.1.0...b@1.2.0) (2021-11-03)
 
 
