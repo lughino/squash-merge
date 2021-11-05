@@ -1,1 +1,1 @@
-console.log('packages/a/index.js updated with merge 3');
+console.log('packages/a/index.js updated with suqashmerge 6');
